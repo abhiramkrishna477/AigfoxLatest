@@ -2,16 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1200">
     <title>Aigfox Originals - Newspaper Layout</title>
     
-    <!-- Tailwind CSS for rapid styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lora:ital,wght@0,400;0,600;1,400&family=Oswald:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -111,55 +108,44 @@
         }
     </style>
 </head>
-<body class="font-body text-brandBlack antialiased p-4 md:p-8 overflow-x-hidden w-full">
+<body class="font-body text-brandBlack antialiased p-8">
 
-    <!-- Main Newspaper Container -->
-    <div class="newspaper-container w-full max-w-[1200px] mx-auto bg-paper border-x border-b border-brandBlack p-6 md:p-10 relative overflow-hidden">
+    <div class="newspaper-container w-[1200px] mx-auto bg-paper border-x border-b border-brandBlack p-10 relative overflow-hidden">
         
-        <!-- HEADER SECTION -->
         <header class="mb-8 relative z-20">
-            <!-- Top Header Row -->
-            <div class="flex justify-between items-center py-2 border-b-2 border-brandBlack text-[10px] md:text-xs font-bold uppercase tracking-widest">
-                <div class="text-brandRed border-b border-brandRed pb-0.5 whitespace-nowrap w-32 md:w-48">- Creative Edition</div>
-                <div class="hidden md:flex items-center gap-4 flex-1 justify-center px-4">
+            <div class="flex justify-between items-center py-2 border-b-2 border-brandBlack text-xs font-bold uppercase tracking-widest">
+                <div class="text-brandRed border-b border-brandRed pb-0.5 whitespace-nowrap w-48">- Creative Edition</div>
+                <div class="flex items-center gap-4 flex-1 justify-center px-4">
                     <div class="h-[2px] flex-1 bg-brandBlack"></div>
                     <span class="text-brandBlack tracking-[0.2em]">Stories That <span class="text-brandRed">Connect.</span> Ideas That <span class="text-brandRed">Impact.</span></span>
                     <div class="h-[2px] flex-1 bg-brandBlack"></div>
                 </div>
-                <div class="text-right text-brandBlack border-b border-dashed border-gray-400 pb-1 w-32 md:w-48">
+                <div class="text-right text-brandBlack border-b border-dashed border-gray-400 pb-1 w-48">
                      <span class="text-[9px]">Updated On</span> <br>
-                     <span class="text-brandRed text-sm md:text-base font-subhead tracking-wide">24 May 2024</span><br>
+                     <span class="text-brandRed text-base font-subhead tracking-wide">24 May 2024</span><br>
                      <span class="text-[9px]">Friday</span>
                 </div>
             </div>
 
-            <!-- Middle Logo & Title Row -->
-            <div class="flex flex-col md:flex-row items-center py-6 border-b-2 border-brandBlack">
-                 <!-- Logo Left -->
-
-                    <div class="w-full md:w-48 flex flex-col items-center md:items-start justify-center md:border-r-2 border-brandBlack md:pr-4 mb-4 md:mb-0">
+            <div class="flex flex-row items-center py-6 border-b-2 border-brandBlack">
+                 <div class="w-48 flex flex-col items-start justify-center border-r-2 border-brandBlack pr-4 mb-0">
                         <div class="mb-2 mt-2 flex items-center justify-center">
-                            <!-- Brand Logo Image -->
                             <img src="aigfox balck logo.png" alt="Aigfox Logo" class="h-48 w-auto object-contain mix-blend-multiply grayscale">
                         </div>
-                        
                     </div>
-                 <!-- Main Title Center -->
-                 <div class="flex-1 flex flex-col items-center justify-center w-full px-2 md:px-4">
-                      <h1 class="font-headline text-5xl sm:text-6xl md:text-[4rem] lg:text-[5.5rem] xl:text-[6rem] leading-[0.8] tracking-tight text-brandBlack uppercase transform scale-y-[1.15] my-4 whitespace-nowrap">
+                 <div class="flex-1 flex flex-col items-center justify-center w-full px-4">
+                      <h1 class="font-headline text-[5.5rem] xl:text-[6rem] leading-[0.8] tracking-tight text-brandBlack uppercase transform scale-y-[1.15] my-4 whitespace-nowrap">
                           Aigfox Originals
                       </h1>
                       <div class="border-t-[1px] border-b-[1px] border-brandBlack w-full max-w-3xl py-1.5 text-center mt-6">
-                           <p class="font-subhead text-[10px] md:text-xs tracking-[0.3em] font-bold text-brandBlack uppercase">
+                           <p class="font-subhead text-xs tracking-[0.3em] font-bold text-brandBlack uppercase">
                                A Creative Studio For Video Ads & Brand Stories
                            </p>
                       </div>
                  </div>
 
-                 <!-- Socials Right & Ad Space -->
-                 <div class="w-full md:w-48 flex flex-col items-center md:items-end justify-center md:border-l-2 border-brandBlack md:pl-4 mt-4 md:mt-0 gap-3">
+                 <div class="w-48 flex flex-col items-end justify-center border-l-2 border-brandBlack pl-4 mt-0 gap-3">
                       
-                      <!-- Social Icons -->
                       <div class="flex gap-2">
                           <a href="#" class="w-6 h-6 rounded-full bg-brandBlack text-paper flex items-center justify-center text-xs hover:bg-brandRed transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
                           <a href="#" class="w-6 h-6 rounded-full bg-brandBlack text-paper flex items-center justify-center text-xs hover:bg-brandRed transition-colors"><i class="fa-brands fa-instagram"></i></a>
@@ -168,28 +154,25 @@
                           <a href="#" class="w-6 h-6 rounded-full bg-brandBlack text-paper flex items-center justify-center text-xs hover:bg-brandRed transition-colors"><i class="fa-brands fa-vimeo-v"></i></a>
                       </div>
 
-                      <!-- Ad Space Placeholder -->
-                        <div class="w-full h-16 border-[2px] border-brandBlack bg-paper-dark overflow-hidden shadow-sm cursor-pointer hover:border-brandRed transition-colors">
+                      <div class="w-full h-16 border-[2px] border-brandBlack bg-paper-dark overflow-hidden shadow-sm cursor-pointer hover:border-brandRed transition-colors">
                             <img src="dummy design 1.png" alt="Advertisement" class="w-full h-full object-cover grayscale contrast-125 mix-blend-multiply">
                         </div>
                  </div>
             </div>
 
-            <!-- Bottom Row (Vol, Issue) -->
-            <div class="flex justify-between items-center py-2 border-b-[3px] border-brandBlack text-[10px] md:text-xs font-subhead font-medium uppercase tracking-widest">
-                <div class="flex gap-4 md:gap-8">
+            <div class="flex justify-between items-center py-2 border-b-[3px] border-brandBlack text-xs font-subhead font-medium uppercase tracking-widest">
+                <div class="flex gap-8">
                     <span>Vol: 01</span>
-                    <span class="hidden sm:inline text-gray-400">|</span>
+                    <span class="text-gray-400">|</span>
                     <span>Issue: 24</span>
-                    <span class="hidden sm:inline text-gray-400">|</span>
-                    <span class="hidden sm:inline">Estd. 2023</span>
+                    <span class="text-gray-400">|</span>
+                    <span>Estd. 2023</span>
                 </div>
                 <div class="hover:text-brandRed cursor-pointer transition-colors font-body lowercase tracking-normal text-right">www.aigfox.com</div>
             </div>
 
-            <!-- Aigfox Bulletin Ticker -->
             <div class="bg-brandBlack text-paper flex items-center text-[10px] font-bold uppercase tracking-widest overflow-hidden border-b-[3px] border-brandBlack">
-                 <div class="bg-brandRed px-3 md:px-6 py-2 whitespace-nowrap z-10 flex items-center gap-3 border-r-2 border-brandBlack h-full">
+                 <div class="bg-brandRed px-6 py-2 whitespace-nowrap z-10 flex items-center gap-3 border-r-2 border-brandBlack h-full">
                       Aigfox Bulletin 
                       <span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span> Live</span>
                  </div>
@@ -208,21 +191,16 @@
             </div>
         </header>
 
-        <!-- MAIN CONTENT GRID (Added vertical line partition for layout) -->
-        <div class="flex flex-col lg:flex-row relative z-20">
+        <div class="flex flex-row relative z-20">
             
-            <!-- LEFT SIDEBAR (Narrow Column) -->
-            <!-- Added border-r, padding, and bottom border on mobile -->
-            <aside class="w-full lg:w-[28%] flex flex-col gap-6 lg:border-r-[2px] border-brandBlack lg:pr-8 border-b-[2px] lg:border-b-0 pb-8 lg:pb-0 mb-8 lg:mb-0">
+            <aside class="w-[28%] flex flex-col gap-6 border-r-[2px] border-brandBlack pr-8 pb-0 mb-0">
                 
-                <!-- Who We Are & Navigation (Added subtle background box) -->
                 <div class="bg-paper-dark/40 p-4 border border-brandBlack/10 rounded-sm">
                     <h2 class="bg-brandRed text-paper font-subhead text-xl font-bold uppercase py-1 px-3 mb-3">Who We Are</h2>
                     <p class="text-sm leading-relaxed mb-4">
                         <strong class="font-bold">AIGFOX ORIGINALS</strong> is a creative studio crafting powerful video advertising that connects brands with people.
                     </p>
                     
-                    <!-- Vertical Menu -->
                     <ul class="flex flex-col text-sm font-subhead font-medium tracking-wide uppercase">
                         <li class="border-y border-gray-300 hover:bg-paper-dark transition-colors">
                             <a href="#" class="flex items-center gap-3 py-3 px-2">
@@ -236,7 +214,7 @@
                         </li>
                         <li class="border-b border-gray-300 hover:bg-paper-dark transition-colors">
                             <a href="#" class="flex items-center gap-3 py-3 px-2">
-                                <i class="fa-solid fa-bullhorn"></i> DIGITAL CAMPAIGNS
+                                <i class="fa-solid fa-bullhorn"></i> DIGITAL CAMICIGNS
                             </a>
                         </li>
                         <li class="border-b border-gray-300 hover:bg-paper-dark transition-colors">
@@ -257,7 +235,6 @@
                     </ul>
                 </div>
 
-                <!-- Why Choose Us -->
                 <div class="px-2">
                     <h2 class="bg-brandRed text-paper font-subhead text-xl font-bold uppercase py-1 px-3 mb-3 inline-block">Why Choose Us?</h2>
                     <ul class="text-sm space-y-2 font-medium">
@@ -269,7 +246,6 @@
                     </ul>
                 </div>
 
-                <!-- What Clients Say (Testimonials - Added subtle color bg-[#f0ece1]) -->
                 <div class="border-[2px] border-brandBlack p-4 bg-[#f0ece1] relative shadow-[3px_3px_0_0_#1a1a1a]">
                     <h3 class="font-headline text-lg uppercase border-b-2 border-brandBlack pb-1 mb-3">What Clients Say</h3>
                     
@@ -292,7 +268,6 @@
                     </div>
                 </div>
 
-                <!-- Behind the Scenes -->
                 <div class="border-y border-brandBlack/20 py-4 mt-2">
                     <h3 class="font-subhead font-bold uppercase text-sm mb-2 pb-1">Behind The Scenes</h3>
                     <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Film crew" class="w-full h-32 object-cover grayscale opacity-90 hover:grayscale-0 transition-all duration-500 mb-2 border border-brandBlack">
@@ -300,7 +275,6 @@
                     <a href="#" class="text-xs font-bold uppercase tracking-wider hover:text-brandRed transition-colors">View More &rarr;</a>
                 </div>
 
-                <!-- Join Our Creative Family -->
                 <div class="border-[2px] border-brandBlack bg-[#e8e1cc] p-4 relative shadow-[4px_4px_0_0_#1a1a1a] mt-2">
                     <h3 class="font-headline text-2xl uppercase mb-1 text-center text-brandRed tracking-wide leading-none">Join Our Family</h3>
                     <p class="text-[11px] mb-3 text-center text-brandBlack font-serif italic border-b border-brandBlack pb-2">Seeking passionate creators</p>
@@ -324,7 +298,6 @@
                     </form>
                 </div>
 
-                <!-- Archive: Classic Ads -->
                 <div class="border-[2px] border-brandBlack p-3 mt-4 bg-paper relative shadow-[3px_3px_0_0_#1a1a1a]">
                     <h3 class="font-headline text-lg uppercase mb-2 border-b-2 border-brandBlack pb-1 leading-none">From The Archives</h3>
                     <div class="w-full aspect-video bg-paper-dark border-[2px] border-brandBlack rounded-sm flex items-center justify-center relative overflow-hidden group cursor-pointer">
@@ -338,7 +311,6 @@
                     <p class="text-xs mt-2 font-serif italic leading-tight text-gray-700">A look back at our award-winning 2022 auto campaign.</p>
                 </div>
 
-                <!-- Archive: Editor's Pick -->
                 <div class="border-[2px] border-brandBlack p-3 mt-1 bg-paper relative shadow-[3px_3px_0_0_#1a1a1a]">
                     <h3 class="font-headline text-lg uppercase mb-2 border-b-2 border-brandBlack pb-1 leading-none">Editor's Pick</h3>
                     <div class="w-full aspect-video bg-paper-dark border-[2px] border-brandBlack rounded-sm flex items-center justify-center relative overflow-hidden group cursor-pointer">
@@ -352,7 +324,6 @@
                     <p class="text-xs mt-2 font-serif italic leading-tight text-gray-700">The short brand film that started it all.</p>
                 </div>
 
-                <!-- Archive: Fan Favorite -->
                 <div class="border-[2px] border-brandBlack p-3 mt-1 bg-paper relative shadow-[3px_3px_0_0_#1a1a1a]">
                     <h3 class="font-headline text-lg uppercase mb-2 border-b-2 border-brandBlack pb-1 leading-none">Fan Favorite</h3>
                     <div class="w-full aspect-video bg-paper-dark border-[2px] border-brandBlack rounded-sm flex items-center justify-center relative overflow-hidden group cursor-pointer">
@@ -366,7 +337,6 @@
                     <p class="text-xs mt-2 font-serif italic leading-tight text-gray-700">The viral food commercial of 2023.</p>
                 </div>
 
-                <!-- Archive: Trending Reel -->
                 <div class="border-[2px] border-brandBlack p-3 mt-1 bg-paper relative shadow-[3px_3px_0_0_#1a1a1a]">
                     <h3 class="font-headline text-lg uppercase mb-2 border-b-2 border-brandBlack pb-1 leading-none">Trending Reel</h3>
                     <div class="w-full aspect-[9/16] bg-paper-dark border-[2px] border-brandBlack rounded-sm flex items-center justify-center relative overflow-hidden group cursor-pointer">
@@ -380,46 +350,32 @@
                     <p class="text-xs mt-2 font-serif italic leading-tight text-gray-700">A quick splash of creativity crafted for social feeds.</p>
                 </div>
 
-                <!-- Ad Space Sidebar -->
-                                <div class="w-full aspect-[3/4] border-[2px] border-brandBlack bg-[#e8e1cc] shadow-[4px_4px_0_0_#1a1a1a] cursor-pointer hover:border-brandRed group transition-colors relative overflow-hidden">
-                    
+                <div class="w-full aspect-[3/4] border-[2px] border-brandBlack bg-[#e8e1cc] shadow-[4px_4px_0_0_#1a1a1a] cursor-pointer hover:border-brandRed group transition-colors relative overflow-hidden">
                     <span class="text-[9px] uppercase font-bold text-gray-500 tracking-widest absolute top-2 right-2 border border-gray-400 px-1 bg-paper/80 z-10">Ad</span>
-                    
-                    <img src="dummy design 2.png" 
-                        alt="Sidebar Advertisement" 
-                        class="w-full h-full ">
-                        
+                    <img src="dummy design 2.png" alt="Sidebar Advertisement" class="w-full h-full ">
                 </div>
             </aside>
 
-            <!-- RIGHT MAIN CONTENT (Wide Column) -->
-            <main class="w-full lg:w-[72%] flex flex-col lg:pl-8">
+            <main class="w-[72%] flex flex-col pl-8">
                 
-                <!-- Main Headline -->
                 <h2 class="font-headline text-6xl uppercase leading-[0.9] tracking-wide mb-6">
                     Latest Works That Speak <span class="text-brandRed">Louder</span> Than Words.
                 </h2>
 
-                <!-- Section Divider -->
                 <div class="flex items-center gap-4 mb-8">
                     <h3 class="font-subhead font-bold text-lg uppercase whitespace-nowrap bg-paper-dark/50 px-2 border-l-4 border-brandRed">Latest Video Ads</h3>
                     <div class="h-[2px] bg-brandBlack w-full"></div>
                 </div>
 
-                <!-- Video Grid Layout -->
                 <div class="flex flex-col gap-6 mb-8">
-                    
-                    <!-- Top Section: Four 4:3 Articles -->
-                    <!-- Added divide-y and divide-x lines for inner grid partitioning -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10 relative">
+                    <div class="grid grid-cols-2 gap-x-8 gap-y-10 relative">
                         
-                        <!-- Story 1 -->
                         <div class="group flex flex-col article-card p-4 -m-4 cursor-pointer relative">
                             <h4 class="font-headline text-3xl uppercase leading-none mb-1 text-brandBlack">The Urban Escape</h4>
                             <p class="font-serif text-lg italic text-brandRed mb-3 leading-tight">"How RideOn Motors captured the city's pulse"</p>
                             
                             <div class="w-full aspect-[4/3] bg-paper-dark border-[2px] border-brandBlack rounded-sm flex items-center justify-center relative overflow-hidden mb-3 shadow-sm">
-                                <span class="font-headline text-5xl md:text-6xl text-brandBlack opacity-20">4:3</span>
+                                <span class="font-headline text-6xl text-brandBlack opacity-20">4:3</span>
                                 <div class="absolute inset-0 flex items-center justify-center bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <div class="w-14 h-14 rounded-full border-[3px] border-brandBlack flex items-center justify-center bg-paper text-brandRed play-btn">
                                         <i class="fa-solid fa-play ml-1 text-xl"></i>
@@ -440,13 +396,12 @@
                             </div>
                         </div>
 
-                        <!-- Story 2 -->
                         <div class="group flex flex-col article-card p-4 -m-4 cursor-pointer">
                             <h4 class="font-headline text-3xl uppercase leading-none mb-1 text-brandBlack">Nature's Secret</h4>
                             <p class="font-serif text-lg italic text-brandRed mb-3 leading-tight">"Discovering sustainable living with Green Future"</p>
                             
                             <div class="w-full aspect-[4/3] bg-paper-dark border-[2px] border-brandBlack rounded-sm flex items-center justify-center relative overflow-hidden mb-3 shadow-sm">
-                                <span class="font-headline text-5xl md:text-6xl text-brandBlack opacity-20">4:3</span>
+                                <span class="font-headline text-6xl text-brandBlack opacity-20">4:3</span>
                                 <div class="absolute inset-0 flex items-center justify-center bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <div class="w-14 h-14 rounded-full border-[3px] border-brandBlack flex items-center justify-center bg-paper text-brandRed play-btn">
                                         <i class="fa-solid fa-play ml-1 text-xl"></i>
@@ -467,16 +422,14 @@
                             </div>
                         </div>
 
-                        <!-- Horizontal Divider line between grid rows -->
-                        <div class="col-span-1 md:col-span-2 border-t border-brandBlack/15 w-full my-[-1rem]"></div>
+                        <div class="col-span-2 border-t border-brandBlack/15 w-full my-[-1rem]"></div>
 
-                        <!-- Story 3 -->
                         <div class="group flex flex-col article-card p-4 -m-4 cursor-pointer">
                             <h4 class="font-headline text-3xl uppercase leading-none mb-1 text-brandBlack">A Taste of Tomorrow</h4>
                             <p class="font-serif text-lg italic text-brandRed mb-3 leading-tight">"Redefining the farm-to-table experience"</p>
                             
                             <div class="w-full aspect-[4/3] bg-paper-dark border-[2px] border-brandBlack rounded-sm flex items-center justify-center relative overflow-hidden mb-3 shadow-sm">
-                                <span class="font-headline text-5xl md:text-6xl text-brandBlack opacity-20">4:3</span>
+                                <span class="font-headline text-6xl text-brandBlack opacity-20">4:3</span>
                                 <div class="absolute inset-0 flex items-center justify-center bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <div class="w-14 h-14 rounded-full border-[3px] border-brandBlack flex items-center justify-center bg-paper text-brandRed play-btn">
                                         <i class="fa-solid fa-play ml-1 text-xl"></i>
@@ -497,13 +450,12 @@
                             </div>
                         </div>
 
-                        <!-- Story 4 -->
                         <div class="group flex flex-col article-card p-4 -m-4 cursor-pointer">
                             <h4 class="font-headline text-3xl uppercase leading-none mb-1 text-brandBlack">Building the Dream</h4>
                             <p class="font-serif text-lg italic text-brandRed mb-3 leading-tight">"Crafting spaces that matter through emotion"</p>
                             
                             <div class="w-full aspect-[4/3] bg-paper-dark border-[2px] border-brandBlack rounded-sm flex items-center justify-center relative overflow-hidden mb-3 shadow-sm">
-                                <span class="font-headline text-5xl md:text-6xl text-brandBlack opacity-20">4:3</span>
+                                <span class="font-headline text-6xl text-brandBlack opacity-20">4:3</span>
                                 <div class="absolute inset-0 flex items-center justify-center bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <div class="w-14 h-14 rounded-full border-[3px] border-brandBlack flex items-center justify-center bg-paper text-brandRed play-btn">
                                         <i class="fa-solid fa-play ml-1 text-xl"></i>
@@ -525,20 +477,16 @@
                         </div>
                     </div>
 
-                    <!-- Major Section Divider (Dashed) -->
                     <div class="w-full border-t-[2px] border-dashed border-brandBlack my-6 opacity-70"></div>
 
-                    <!-- Bottom Section: One Large 16:9 and Three Vertical 9:16 -->
                     <div class="flex flex-col gap-8 mt-2">
                         
-                        <!-- Top Large Video (16:9 Story) -->
                         <div class="w-full group flex flex-col article-card p-4 -mx-4 cursor-pointer">
-                            
-                            <h4 class="font-headline text-5xl md:text-6xl uppercase leading-[0.9] mb-2 text-brandBlack">The Grand Finale</h4>
+                            <h4 class="font-headline text-[5.5rem] uppercase leading-[0.9] mb-2 text-brandBlack">The Grand Finale</h4>
                             <p class="font-serif text-xl italic text-brandRed mb-4 leading-tight">"An exclusive look behind the magic of our most ambitious brand film to date."</p>
 
                             <div class="w-full h-full min-h-[300px] aspect-video bg-paper-dark border-[2px] border-brandBlack rounded-sm flex items-center justify-center relative overflow-hidden mb-4 shadow-sm">
-                                <span class="font-headline text-7xl md:text-[8rem] text-brandBlack opacity-20">16:9</span>
+                                <span class="font-headline text-[8rem] text-brandBlack opacity-20">16:9</span>
                                 <div class="absolute inset-0 flex items-center justify-center bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <div class="w-20 h-20 rounded-full border-[4px] border-brandBlack flex items-center justify-center bg-paper text-brandRed play-btn">
                                         <i class="fa-solid fa-play ml-1 text-3xl"></i>
@@ -550,7 +498,7 @@
                                 <span class="text-brandBlack">Client: Director's Cut</span> &bull; <span>Entertainment</span> &bull; <span>05:00</span> &bull; <span>2024</span> &bull; <span>16:9</span>
                             </p>
 
-                            <p class="text-base font-body text-gray-700 leading-relaxed mb-5 md:w-3/4">
+                            <p class="text-base font-body text-gray-700 leading-relaxed mb-5 w-3/4">
                                 Over 50 actors and 3 iconic locations. A captivating, unforgettable cinematic experience pushed to the limits for the big screen.
                             </p>
 
@@ -559,10 +507,8 @@
                             </div>
                         </div>
 
-                        <!-- Bottom Vertical Videos (9:16 - Side by side row) -->
-                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 mt-2">
+                        <div class="grid grid-cols-3 gap-8 mt-2">
                             
-                            <!-- Reel 1 -->
                             <div class="group flex flex-col article-card p-3 -m-3 cursor-pointer">
                                 <div class="w-full aspect-[9/16] bg-paper-dark border-[2px] border-brandBlack rounded-sm flex items-center justify-center relative overflow-hidden mb-3 shadow-sm">
                                     <span class="font-headline text-2xl text-brandBlack opacity-20">9:16</span>
@@ -578,10 +524,9 @@
                                 <div class="text-[10px] font-bold uppercase text-brandRed mt-auto"><i class="fa-solid fa-play"></i> Watch Reel</div>
                             </div>
 
-                            <!-- Reel 2 -->
                             <div class="group flex flex-col article-card p-3 -m-3 cursor-pointer">
                                 <div class="w-full aspect-[9/16] bg-paper-dark border-[2px] border-brandBlack rounded-sm flex items-center justify-center relative overflow-hidden mb-3 shadow-sm">
-                                    <span class="font-headline text-xl md:text-2xl text-brandBlack opacity-20">9:16</span>
+                                    <span class="font-headline text-2xl text-brandBlack opacity-20">9:16</span>
                                     <div class="absolute inset-0 flex items-center justify-center bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                         <div class="w-10 h-10 rounded-full border-[2px] border-brandBlack flex items-center justify-center bg-paper text-brandRed play-btn">
                                             <i class="fa-solid fa-play ml-0.5 text-sm"></i>
@@ -594,10 +539,9 @@
                                 <div class="text-[10px] font-bold uppercase text-brandRed mt-auto"><i class="fa-solid fa-play"></i> Watch Reel</div>
                             </div>
 
-                            <!-- Reel 3 -->
                             <div class="group flex flex-col article-card p-3 -m-3 cursor-pointer">
                                 <div class="w-full aspect-[9/16] bg-paper-dark border-[2px] border-brandBlack rounded-sm flex items-center justify-center relative overflow-hidden mb-3 shadow-sm">
-                                    <span class="font-headline text-xl md:text-2xl text-brandBlack opacity-20">9:16</span>
+                                    <span class="font-headline text-2xl text-brandBlack opacity-20">9:16</span>
                                     <div class="absolute inset-0 flex items-center justify-center bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                         <div class="w-10 h-10 rounded-full border-[2px] border-brandBlack flex items-center justify-center bg-paper text-brandRed play-btn">
                                             <i class="fa-solid fa-play ml-0.5 text-sm"></i>
@@ -615,33 +559,21 @@
 
                 </div>
 
-                <!-- View All Works Button -->
                 <div class="flex justify-center mb-10 mt-4">
                     <a href="#" class="font-subhead font-bold text-brandRed uppercase tracking-wider border-[2px] border-brandRed px-10 py-3 hover:bg-brandRed hover:text-paper transition-colors shadow-[4px_4px_0_0_#a62b2b] hover:shadow-none hover:translate-y-1 hover:translate-x-1">
                         Explore Full Archive
                     </a>
                 </div>
 
-                   <!-- Main Column Ad Space Placeholder -->
-                        <div class="w-full h-full md:h-full border-[3px] border-brandBlack bg-white mb-10 shadow-[4px_4px_0_0_#1a1a1a] cursor-pointer relative overflow-hidden">
-                            
-                            <!-- Faint "Ad" tag badge in the corner -->
+                   <div class="w-full h-full border-[3px] border-brandBlack bg-white mb-10 shadow-[4px_4px_0_0_#1a1a1a] cursor-pointer relative overflow-hidden">
                             <span class="text-[10px] uppercase font-bold text-gray-500 tracking-widest absolute top-2 right-2 border border-gray-400 px-1 bg-white/90 z-10">Ad</span>
-                            
-                            <!-- Your Image Logo/Banner (Original Colors) -->
-                            <img src="dummy design 3.png" 
-                                alt="Main Column Advertisement" 
-                                class="w-full h-full object-cover">
-                                
+                            <img src="dummy design 3.png" alt="Main Column Advertisement" class="w-full h-full object-cover">
                         </div>
 
-                <!-- Forms Section (Centered WhatsApp Ad) -->
                 <div class="border-t-[1px] border-brandBlack/30 pt-10 mt-auto flex justify-center">
-                    
-                    <!-- WhatsApp Form Style -->
-                    <div class="w-full max-w-2xl border-[1.5px] border-dashed border-gray-400 bg-paper p-8 md:p-10 relative article-card">
+                    <div class="w-full max-w-2xl border-[1.5px] border-dashed border-gray-400 bg-paper p-10 relative article-card">
                         
-                        <h3 class="font-headline text-4xl md:text-5xl font-bold uppercase mb-2 text-brandBlack tracking-wide">
+                        <h3 class="font-headline text-5xl font-bold uppercase mb-2 text-brandBlack tracking-wide">
                             Tell Us <span class="text-brandRed">What You Need</span>
                         </h3>
                         <p class="text-sm mb-6 text-brandBlack font-medium">Select your tier, and let's chat directly on WhatsApp.</p>
@@ -657,8 +589,8 @@
                             </div>
                         </div>
                         
-                        <form class="space-y-6 w-full md:w-[90%] relative z-10">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <form class="space-y-6 w-[90%] relative z-10">
+                            <div class="grid grid-cols-2 gap-8">
                                 <div>
                                     <label class="text-[10px] uppercase font-bold tracking-wider text-brandBlack mb-1 block">Name</label>
                                     <input type="text" placeholder="Your Name" class="w-full bg-transparent border-b border-gray-400 px-0 py-2 text-sm focus:outline-none focus:border-brandBlack placeholder-gray-500 font-body transition-colors">
@@ -691,23 +623,18 @@
                             </div>
                         </form>
                     </div>
-
                 </div>
 
             </main>
         </div>
 
-        <!-- FOOTER SECTION -->
         <footer class="mt-8 border-t-[3px] border-brandBlack pt-6 relative z-20">
             
-            <!-- Trusted By Brands Marquee/Row -->
             <div class="flex flex-row items-center mb-8 pb-8 border-b border-gray-400 overflow-hidden w-full relative">
                 <h3 class="font-subhead font-bold uppercase text-sm whitespace-nowrap bg-paper z-20 pr-6 absolute left-0 h-full flex items-center shadow-[10px_0_15px_-5px_#f4f1ea]">Trusted By Brands</h3>
                 
-                <!-- Continuous Marquee container -->
                 <div class="flex-1 overflow-hidden relative ml-[160px]" style="mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);">
                     <div class="animate-marquee gap-16 opacity-70 grayscale">
-                        <!-- Group 1 -->
                         <div class="flex gap-16 items-center">
                             <div class="flex items-center gap-2 font-bold text-sm"><i class="fa-solid fa-house-chimney text-xl"></i> HAPPY HOME</div>
                             <div class="flex items-center gap-2 font-bold text-sm"><i class="fa-solid fa-leaf text-xl"></i> Green Future</div>
@@ -715,7 +642,6 @@
                             <div class="flex items-center gap-2 font-bold text-sm"><i class="fa-solid fa-apple-whole text-xl"></i> FreshDay</div>
                             <div class="flex items-center gap-2 font-bold text-sm"><i class="fa-regular fa-sun text-xl"></i> SunSip</div>
                         </div>
-                        <!-- Group 2 (Duplicate for continuous scroll) -->
                         <div class="flex gap-16 items-center ml-16">
                             <div class="flex items-center gap-2 font-bold text-sm"><i class="fa-solid fa-house-chimney text-xl"></i> HAPPY HOME</div>
                             <div class="flex items-center gap-2 font-bold text-sm"><i class="fa-solid fa-leaf text-xl"></i> Green Future</div>
@@ -727,19 +653,15 @@
                 </div>
             </div>
 
-            <!-- Bottom Info (Added faint vertical dividing lines on desktop) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 lg:divide-x-[1.5px] divide-brandBlack/20 text-xs">
-                
-                <!-- Col 1 -->
-                <div class="lg:pr-6">
+            <div class="grid grid-cols-4 divide-x-[1.5px] divide-brandBlack/20 text-xs">
+                <div class="pr-6">
                     <h4 class="font-bold uppercase mb-2">Aigfox Originals</h4>
                     <p class="text-gray-700 leading-relaxed">
                         We create video content that helps brands grow, engage and leave a lasting impact.
                     </p>
                 </div>
                 
-                <!-- Col 2 -->
-                <div class="lg:px-6">
+                <div class="px-6">
                     <h4 class="font-bold uppercase mb-2">Get In Touch</h4>
                     <ul class="space-y-1 text-gray-700">
                         <li><i class="fa-solid fa-phone w-4"></i> +91 12345 67890</li>
@@ -748,8 +670,7 @@
                     </ul>
                 </div>
                 
-                <!-- Col 3 -->
-                <div class="lg:px-6">
+                <div class="px-6">
                     <h4 class="font-bold uppercase mb-2">Follow Us</h4>
                     <div class="flex gap-2 mb-1">
                         <a href="#" class="w-6 h-6 rounded-full bg-brandBlack text-paper flex items-center justify-center text-xs hover:bg-brandRed transition-colors"><i class="fa-brands fa-instagram"></i></a>
@@ -761,17 +682,15 @@
                     <p class="text-gray-600">/aigfoxoriginals</p>
                 </div>
                 
-                <!-- Col 4 -->
-                <div class="md:text-right lg:pl-6">
+                <div class="text-right pl-6">
                     <p class="mb-1">&copy; 2024 AIGFOX ORIGINALS.</p>
                     <p class="mb-3">All rights reserved.</p>
-                    <div class="flex md:justify-end gap-3 text-gray-600 hover:text-brandBlack">
+                    <div class="flex justify-end gap-3 text-gray-600 hover:text-brandBlack">
                         <a href="#" class="hover:underline">Privacy Policy</a>
                         <span>|</span>
                         <a href="#" class="hover:underline">Terms & Conditions</a>
                     </div>
                 </div>
-
             </div>
         </footer>
 
