@@ -356,9 +356,17 @@
                                     <h4 class="font-headline font-bold text-3xl md:text-4xl leading-none mb-2 text-brandBlack">The Urban Escape</h4>
                                     <p class="font-serif text-base italic text-brandGray mb-4 leading-tight">"How we captured the city's midnight pulse"</p>
                                     
-                                    <!-- 4:3 Replace Area 1 -->
-                                    <div class="w-full aspect-[4/3] bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-4">
-                                        <iframe class="w-full h-full absolute top-0 left-0" src="https://www.youtube-nocookie.com/embed/ppk4m0l-bKA" title="NIKSHAN   INVERTER EXAM   HD16 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <!-- Custom Facade Overlay for Video 1 -->
+                                    <div class="w-full aspect-[4/3] bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-4 cursor-pointer group/vid" onclick="playVideo(this)">
+                                        <!-- The Cover (Colored Thumbnail & Lower Bar) -->
+                                        <div class="video-facade absolute inset-0 z-10 transition-opacity duration-300">
+                                            <img src="https://img.youtube.com/vi/ppk4m0l-bKA/maxresdefault.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Video Thumbnail">
+                                            <div class="absolute bottom-0 left-0 w-full bg-brandBlack text-paper text-[10px] font-subhead uppercase tracking-widest py-2.5 z-20 text-center flex items-center justify-center gap-2 group-hover/vid:bg-brandGray transition-colors">
+                                                <i class="fa-solid fa-circle-play text-[11px]"></i> Click image to play
+                                            </div>
+                                        </div>
+                                        <!-- The Hidden Player (Only loads when clicked) -->
+                                        <iframe data-src="https://www.youtube-nocookie.com/embed/ppk4m0l-bKA?rel=0&modestbranding=1" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </div>
                                     
                                     <p class="text-[10px] font-subhead uppercase font-semibold text-brandGray tracking-widest mb-3 flex flex-wrap gap-x-2">
@@ -368,19 +376,23 @@
                                     <p class="text-sm font-body text-brandGray leading-relaxed mb-4">
                                         A cinematic journey through neon-lit streets, capturing the raw emotion of the midnight drive in stunning high contrast.
                                     </p>
-                                    
-                                    <div class="inline-flex items-center gap-2 font-subhead font-bold text-xs uppercase tracking-widest text-brandBlack group-hover:text-brandGray transition-colors mt-auto w-max cursor-pointer">
-                                        <i class="fa-solid fa-play text-[10px]"></i> Watch Campaign
-                                    </div>
                                 </div>
 
                                 <div class="group flex flex-col article-card p-2 rounded-sm">
                                     <h4 class="font-headline font-bold text-3xl md:text-4xl leading-none mb-2 text-brandBlack">Nature's Secret</h4>
                                     <p class="font-serif text-base italic text-brandGray mb-4 leading-tight">"Discovering sustainable living beautifully"</p>
                                     
-                                    <!-- 4:3 Replace Area 2 -->
-                                    <div class="w-full aspect-[4/3] bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-4">
-                                        <iframe title="vimeo-player" class="w-full h-full absolute top-0 left-0" src="https://player.vimeo.com/video/1198049257?h=0278d65755" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+                                    <!-- Custom Facade Overlay for Video 2 -->
+                                    <div class="w-full aspect-[4/3] bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-4 cursor-pointer group/vid" onclick="playVideo(this)">
+                                        <!-- The Cover -->
+                                        <div class="video-facade absolute inset-0 z-10 transition-opacity duration-300">
+                                            <img src="https://placehold.co/800x600/d1cbc0/111111?text=Nature's+Secret" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Video Thumbnail">
+                                            <div class="absolute bottom-0 left-0 w-full bg-brandBlack text-paper text-[10px] font-subhead uppercase tracking-widest py-2.5 z-20 text-center flex items-center justify-center gap-2 group-hover/vid:bg-brandGray transition-colors">
+                                                <i class="fa-solid fa-circle-play text-[11px]"></i> Click image to play
+                                            </div>
+                                        </div>
+                                        <!-- The Hidden Player -->
+                                        <iframe data-src="https://player.vimeo.com/video/1198049257?h=0278d65755&title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen></iframe>
                                     </div>
                                     
                                     <p class="text-[10px] font-subhead uppercase font-semibold text-brandGray tracking-widest mb-3 flex flex-wrap gap-x-2">
@@ -390,10 +402,6 @@
                                     <p class="text-sm font-body text-brandGray leading-relaxed mb-4">
                                         Filming entirely on location in lush valleys to bring eco-friendly initiatives naturally to light.
                                     </p>
-                                    
-                                    <div class="inline-flex items-center gap-2 font-subhead font-bold text-xs uppercase tracking-widest text-brandBlack group-hover:text-brandGray transition-colors mt-auto w-max cursor-pointer">
-                                        <i class="fa-solid fa-play text-[10px]"></i> Watch Campaign
-                                    </div>
                                 </div>
 
                                 <div class="col-span-2 border-t border-brandBlack/10 w-full my-2"></div>
@@ -402,9 +410,17 @@
                                     <h4 class="font-headline font-bold text-3xl md:text-4xl leading-none mb-2 text-brandBlack">A Taste of Tomorrow</h4>
                                     <p class="font-serif text-base italic text-brandGray mb-4 leading-tight">"Redefining the farm-to-table experience"</p>
                                     
-                                    <!-- 4:3 Replace Area 3 -->
-                                    <div class="w-full aspect-[4/3] bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-4">
-                                        <iframe class="w-full h-full absolute top-0 left-0" src="https://www.youtube-nocookie.com/embed/ppk4m0l-bKA" title="NIKSHAN   INVERTER EXAM   HD16 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <!-- Custom Facade Overlay for Video 3 -->
+                                    <div class="w-full aspect-[4/3] bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-4 cursor-pointer group/vid" onclick="playVideo(this)">
+                                        <!-- The Cover -->
+                                        <div class="video-facade absolute inset-0 z-10 transition-opacity duration-300">
+                                            <img src="https://img.youtube.com/vi/ppk4m0l-bKA/maxresdefault.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Video Thumbnail">
+                                            <div class="absolute bottom-0 left-0 w-full bg-brandBlack text-paper text-[10px] font-subhead uppercase tracking-widest py-2.5 z-20 text-center flex items-center justify-center gap-2 group-hover/vid:bg-brandGray transition-colors">
+                                                <i class="fa-solid fa-circle-play text-[11px]"></i> Click image to play
+                                            </div>
+                                        </div>
+                                        <!-- The Hidden Player -->
+                                        <iframe data-src="https://www.youtube-nocookie.com/embed/ppk4m0l-bKA?rel=0&modestbranding=1" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </div>
                                     
                                     <p class="text-[10px] font-subhead uppercase font-semibold text-brandGray tracking-widest mb-3 flex flex-wrap gap-x-2">
@@ -414,19 +430,23 @@
                                     <p class="text-sm font-body text-brandGray leading-relaxed mb-4">
                                         Utilizing crisp macro-lenses to make everyday ingredients look like a cinematic masterpiece.
                                     </p>
-                                    
-                                    <div class="inline-flex items-center gap-2 font-subhead font-bold text-xs uppercase tracking-widest text-brandBlack group-hover:text-brandGray transition-colors mt-auto w-max cursor-pointer">
-                                        <i class="fa-solid fa-play text-[10px]"></i> Watch Campaign
-                                    </div>
                                 </div>
 
                                 <div class="group flex flex-col article-card p-2 rounded-sm">
                                     <h4 class="font-headline font-bold text-3xl md:text-4xl leading-none mb-2 text-brandBlack">Building the Dream</h4>
                                     <p class="font-serif text-base italic text-brandGray mb-4 leading-tight">"Crafting spaces that matter through emotion"</p>
                                     
-                                    <!-- 4:3 Replace Area 4 -->
-                                    <div class="w-full aspect-[4/3] bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-4">
-                                        <iframe class="w-full h-full absolute top-0 left-0" src="https://www.youtube-nocookie.com/embed/ppk4m0l-bKA" title="NIKSHAN   INVERTER EXAM   HD16 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <!-- Custom Facade Overlay for Video 4 -->
+                                    <div class="w-full aspect-[4/3] bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-4 cursor-pointer group/vid" onclick="playVideo(this)">
+                                        <!-- The Cover -->
+                                        <div class="video-facade absolute inset-0 z-10 transition-opacity duration-300">
+                                            <img src="https://img.youtube.com/vi/ppk4m0l-bKA/maxresdefault.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Video Thumbnail">
+                                            <div class="absolute bottom-0 left-0 w-full bg-brandBlack text-paper text-[10px] font-subhead uppercase tracking-widest py-2.5 z-20 text-center flex items-center justify-center gap-2 group-hover/vid:bg-brandGray transition-colors">
+                                                <i class="fa-solid fa-circle-play text-[11px]"></i> Click image to play
+                                            </div>
+                                        </div>
+                                        <!-- The Hidden Player -->
+                                        <iframe data-src="https://www.youtube-nocookie.com/embed/ppk4m0l-bKA?rel=0&modestbranding=1" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </div>
                                     
                                     <p class="text-[10px] font-subhead uppercase font-semibold text-brandGray tracking-widest mb-3 flex flex-wrap gap-x-2">
@@ -436,10 +456,6 @@
                                     <p class="text-sm font-body text-brandGray leading-relaxed mb-4">
                                         Highlighting the warm, human connection of finding and building a forever home.
                                     </p>
-                                    
-                                    <div class="inline-flex items-center gap-2 font-subhead font-bold text-xs uppercase tracking-widest text-brandBlack group-hover:text-brandGray transition-colors mt-auto w-max cursor-pointer">
-                                        <i class="fa-solid fa-play text-[10px]"></i> Watch Campaign
-                                    </div>
                                 </div>
                             </div>
 
@@ -450,14 +466,15 @@
                                     <h4 class="font-headline font-bold text-5xl md:text-6xl leading-[1] mb-4 text-brandBlack">The Grand Finale</h4>
                                     <p class="font-serif text-xl italic text-brandGray mb-6 leading-tight">"An exclusive look behind the magic of our most ambitious brand film to date."</p>
 
-                                    <!-- Main Feature 16:9 (Unchanged) -->
-                                    <div class="w-full h-full min-h-[350px] aspect-video bg-paper-dark border border-brandBlack/20 flex items-center justify-center relative overflow-hidden mb-6">
-                                        <span class="font-subhead font-light text-[6rem] text-brandBlack opacity-20">16:9</span>
-                                        <div class="absolute inset-0 flex items-center justify-center bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                            <div class="w-16 h-16 rounded-full border border-brandBlack flex items-center justify-center bg-paper text-brandBlack play-btn">
-                                                <i class="fa-solid fa-play ml-1 text-2xl"></i>
+                                    <!-- Main Feature 16:9 Facade -->
+                                    <div class="w-full h-full min-h-[350px] aspect-video bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-6 cursor-pointer group/vid" onclick="playVideo(this)">
+                                        <div class="video-facade absolute inset-0 z-10 transition-opacity duration-300">
+                                            <img src="https://img.youtube.com/vi/ppk4m0l-bKA/maxresdefault.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Video Thumbnail">
+                                            <div class="absolute bottom-0 left-0 w-full bg-brandBlack text-paper text-xs font-subhead uppercase tracking-widest py-3 z-20 text-center flex items-center justify-center gap-2 group-hover/vid:bg-brandGray transition-colors">
+                                                <i class="fa-solid fa-circle-play text-sm"></i> Click image to play feature film
                                             </div>
                                         </div>
+                                        <iframe data-src="https://www.youtube-nocookie.com/embed/ppk4m0l-bKA?rel=0&modestbranding=1" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </div>
                                     
                                     <p class="text-xs font-subhead uppercase font-semibold text-brandGray tracking-widest mb-4 flex flex-wrap gap-x-3">
@@ -467,10 +484,6 @@
                                     <p class="text-base font-body text-brandGray leading-relaxed mb-6 w-5/6">
                                         Over 50 actors and 3 iconic locations. A captivating, unforgettable cinematic experience pushed to the limits for the big screen. We left no stone unturned.
                                     </p>
-
-                                    <div class="inline-flex items-center gap-2 font-subhead font-bold text-sm uppercase tracking-widest text-brandBlack group-hover:text-brandGray transition-colors w-max">
-                                        <i class="fa-solid fa-play"></i> Watch Full Film
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -622,6 +635,23 @@
         window.addEventListener('DOMContentLoaded', scaleLayoutToFit);
         window.addEventListener('load', scaleLayoutToFit);
         setTimeout(scaleLayoutToFit, 100);
+
+        // This beautiful little script handles the custom video playback!
+        function playVideo(container) {
+            const facade = container.querySelector('.video-facade');
+            const iframe = container.querySelector('iframe');
+            
+            if (facade && iframe) {
+                // Fade out the beautiful cover
+                facade.style.opacity = '0';
+                setTimeout(() => { facade.style.display = 'none'; }, 300);
+                
+                // Load the video and tell it to autoplay
+                const src = iframe.getAttribute('data-src');
+                const separator = src.includes('?') ? '&' : '?';
+                iframe.setAttribute('src', src + separator + 'autoplay=1');
+            }
+        }
     </script>
 
 </body>
