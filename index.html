@@ -313,13 +313,16 @@
 
                         <div class="border border-brandBlack/20 p-4 mt-2 bg-white relative">
                             <h3 class="font-headline font-bold text-base uppercase mb-3 border-b border-brandBlack/20 pb-1">Fan Favorite</h3>
-                            <div class="w-full aspect-video bg-paper-dark border border-brandBlack/30 flex items-center justify-center relative overflow-hidden group cursor-pointer">
-                                <span class="font-subhead font-light text-2xl text-brandBlack opacity-20">16:9</span>
-                                <div class="absolute inset-0 flex items-center justify-center bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <div class="w-10 h-10 rounded-full border border-brandBlack flex items-center justify-center bg-paper text-brandBlack play-btn">
-                                        <i class="fa-solid fa-play ml-0.5 text-sm"></i>
+                            <div class="w-full aspect-video bg-paper-dark border border-brandBlack/30 flex items-center justify-center relative overflow-hidden group cursor-pointer group/vid" onclick="playVideo(this)">
+                                <div class="video-facade absolute inset-0 z-10 transition-opacity duration-300">
+                                    <img data-video-type="vimeo" data-video-id="1201374112" data-custom-src="" class="dynamic-thumb absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Fan Favorite Thumbnail">
+                                    <div class="absolute inset-0 flex items-center justify-center bg-black/5 opacity-0 group-hover/vid:opacity-100 transition-opacity duration-300">
+                                        <div class="w-10 h-10 rounded-full border border-brandBlack flex items-center justify-center bg-paper text-brandBlack play-btn">
+                                            <i class="fa-solid fa-play ml-0.5 text-sm"></i>
+                                        </div>
                                     </div>
                                 </div>
+                                <iframe data-src="https://player.vimeo.com/video/1201374112?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
                             </div>
                             <p class="text-xs mt-3 font-serif italic text-brandGray">The viral food commercial of 2023.</p>
                         </div>
