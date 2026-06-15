@@ -358,14 +358,14 @@
                                     
                                     <!-- Custom Facade Overlay for Video 1 -->
                                     <div class="w-full aspect-[4/3] bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-4 cursor-pointer group/vid" onclick="playVideo(this)">
-                                        <!-- The Cover (Colored Thumbnail & Lower Bar) -->
                                         <div class="video-facade absolute inset-0 z-10 transition-opacity duration-300">
-                                            <img src="https://img.youtube.com/vi/ppk4m0l-bKA/maxresdefault.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Video Thumbnail">
+                                            <!-- To use a custom thumbnail, paste your image link in data-custom-src="". Otherwise, it loads the original. -->
+                                            <img data-video-type="youtube" data-video-id="ppk4m0l-bKA" data-custom-src="" class="dynamic-thumb absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Video Thumbnail">
+                                            
                                             <div class="absolute bottom-0 left-0 w-full bg-black/60 backdrop-blur-sm text-white/90 text-[10px] font-subhead uppercase tracking-widest py-2.5 z-20 text-center flex items-center justify-center gap-2 group-hover/vid:bg-black/80 transition-colors">
                                                 <i class="fa-solid fa-circle-play text-[11px]"></i> Click image to play
                                             </div>
                                         </div>
-                                        <!-- The Hidden Player (Only loads when clicked) -->
                                         <iframe data-src="https://www.youtube-nocookie.com/embed/ppk4m0l-bKA?rel=0&modestbranding=1" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </div>
                                     
@@ -384,15 +384,14 @@
                                     
                                     <!-- Custom Facade Overlay for Video 2 -->
                                     <div class="w-full aspect-[4/3] bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-4 cursor-pointer group/vid" onclick="playVideo(this)">
-                                        <!-- The Cover -->
                                         <div class="video-facade absolute inset-0 z-10 transition-opacity duration-300">
-                                            <!-- Now fetching the REAL Vimeo thumbnail dynamically -->
-                                            <img src="https://vumbnail.com/1198049257.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Vimeo Video Thumbnail">
+                                            <!-- Smart Vimeo Thumbnail: JS will fetch the official image securely if data-custom-src is empty -->
+                                            <img data-video-type="vimeo" data-video-id="1198049257" data-custom-src="" class="dynamic-thumb absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Vimeo Video Thumbnail">
+                                            
                                             <div class="absolute bottom-0 left-0 w-full bg-black/60 backdrop-blur-sm text-white/90 text-[10px] font-subhead uppercase tracking-widest py-2.5 z-20 text-center flex items-center justify-center gap-2 group-hover/vid:bg-black/80 transition-colors">
                                                 <i class="fa-solid fa-circle-play text-[11px]"></i> Click image to play
                                             </div>
                                         </div>
-                                        <!-- The Hidden Player -->
                                         <iframe data-src="https://player.vimeo.com/video/1198049257?h=0278d65755&title=0&byline=0&portrait=0" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen></iframe>
                                     </div>
                                     
@@ -413,14 +412,13 @@
                                     
                                     <!-- Custom Facade Overlay for Video 3 -->
                                     <div class="w-full aspect-[4/3] bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-4 cursor-pointer group/vid" onclick="playVideo(this)">
-                                        <!-- The Cover -->
                                         <div class="video-facade absolute inset-0 z-10 transition-opacity duration-300">
-                                            <img src="https://img.youtube.com/vi/ppk4m0l-bKA/maxresdefault.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Video Thumbnail">
+                                            <img data-video-type="youtube" data-video-id="ppk4m0l-bKA" data-custom-src="" class="dynamic-thumb absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Video Thumbnail">
+                                            
                                             <div class="absolute bottom-0 left-0 w-full bg-black/60 backdrop-blur-sm text-white/90 text-[10px] font-subhead uppercase tracking-widest py-2.5 z-20 text-center flex items-center justify-center gap-2 group-hover/vid:bg-black/80 transition-colors">
                                                 <i class="fa-solid fa-circle-play text-[11px]"></i> Click image to play
                                             </div>
                                         </div>
-                                        <!-- The Hidden Player -->
                                         <iframe data-src="https://www.youtube-nocookie.com/embed/ppk4m0l-bKA?rel=0&modestbranding=1" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </div>
                                     
@@ -439,14 +437,13 @@
                                     
                                     <!-- Custom Facade Overlay for Video 4 -->
                                     <div class="w-full aspect-[4/3] bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-4 cursor-pointer group/vid" onclick="playVideo(this)">
-                                        <!-- The Cover -->
                                         <div class="video-facade absolute inset-0 z-10 transition-opacity duration-300">
-                                            <img src="https://img.youtube.com/vi/ppk4m0l-bKA/maxresdefault.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Video Thumbnail">
+                                            <img data-video-type="youtube" data-video-id="ppk4m0l-bKA" data-custom-src="" class="dynamic-thumb absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Video Thumbnail">
+                                            
                                             <div class="absolute bottom-0 left-0 w-full bg-black/60 backdrop-blur-sm text-white/90 text-[10px] font-subhead uppercase tracking-widest py-2.5 z-20 text-center flex items-center justify-center gap-2 group-hover/vid:bg-black/80 transition-colors">
                                                 <i class="fa-solid fa-circle-play text-[11px]"></i> Click image to play
                                             </div>
                                         </div>
-                                        <!-- The Hidden Player -->
                                         <iframe data-src="https://www.youtube-nocookie.com/embed/ppk4m0l-bKA?rel=0&modestbranding=1" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </div>
                                     
@@ -470,7 +467,8 @@
                                     <!-- Main Feature 16:9 Facade -->
                                     <div class="w-full h-full min-h-[350px] aspect-video bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-6 cursor-pointer group/vid" onclick="playVideo(this)">
                                         <div class="video-facade absolute inset-0 z-10 transition-opacity duration-300">
-                                            <img src="https://img.youtube.com/vi/ppk4m0l-bKA/maxresdefault.jpg" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Video Thumbnail">
+                                            <img data-video-type="youtube" data-video-id="ppk4m0l-bKA" data-custom-src="" class="dynamic-thumb absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Video Thumbnail">
+                                            
                                             <div class="absolute bottom-0 left-0 w-full bg-black/60 backdrop-blur-sm text-white/90 text-xs font-subhead uppercase tracking-widest py-3 z-20 text-center flex items-center justify-center gap-2 group-hover/vid:bg-black/80 transition-colors">
                                                 <i class="fa-solid fa-circle-play text-sm"></i> Click image to play feature film
                                             </div>
@@ -653,6 +651,41 @@
                 iframe.setAttribute('src', src + separator + 'autoplay=1');
             }
         }
+
+        // Smart Thumbnail Loader (Handles Custom & Fallback)
+        function initVideoThumbnails() {
+            const thumbs = document.querySelectorAll('.dynamic-thumb');
+            
+            thumbs.forEach(img => {
+                const customSrc = img.getAttribute('data-custom-src');
+                const type = img.getAttribute('data-video-type');
+                const id = img.getAttribute('data-video-id');
+
+                // 1. If you added a custom image URL, it uses that!
+                if (customSrc && customSrc.trim() !== '') {
+                    img.src = customSrc;
+                    return;
+                }
+
+                // 2. Otherwise, it automatically fetches the real platform thumbnail
+                if (type === 'youtube' && id) {
+                    img.src = `https://img.youtube.com/vi/${id}/maxresdefault.jpg`;
+                } else if (type === 'vimeo' && id) {
+                    // This securely fetches the real, unblocked thumbnail from Vimeo
+                    fetch(`https://vimeo.com/api/v2/video/${id}.json`)
+                        .then(response => response.json())
+                        .then(data => {
+                            if(data && data[0] && data[0].thumbnail_large) {
+                                img.src = data[0].thumbnail_large;
+                            }
+                        })
+                        .catch(e => console.log('Vimeo thumb fetch error:', e));
+                }
+            });
+        }
+        
+        // Run thumbnail fetcher on load
+        window.addEventListener('DOMContentLoaded', initVideoThumbnails);
     </script>
 
 </body>
