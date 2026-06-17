@@ -50,15 +50,9 @@
         .newspaper-container {
             box-shadow: 0 10px 30px rgba(0,0,0,0.15), 0 1px 3px rgba(0,0,0,0.1);
             position: relative;
-        }
-
-        .newspaper-container::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.06'/%3E%3C/svg%3E");
-            pointer-events: none;
-            z-index: 10;
+            background-image: url('papper bg.jpg');
+            background-repeat: repeat;
+            background-size: auto;
         }
 
         .play-btn {
@@ -114,7 +108,7 @@
         
         <div id="scaled-wrapper" class="w-[1200px] flex-shrink-0">
 
-            <div class="newspaper-container w-full bg-paper border border-brandBlack p-10 relative overflow-hidden">
+            <div class="newspaper-container w-full border border-brandBlack p-10 relative overflow-hidden">
                 
                 <header class="mb-8 relative z-20">
                     <div class="flex justify-between items-center py-2 border-b-2 border-brandBlack text-xs font-subhead uppercase tracking-widest">
@@ -195,80 +189,80 @@
 
                 <div class="flex flex-row relative z-20">
                     
-                    <aside class="w-[28%] flex flex-col gap-8 border-r border-brandBlack/30 pr-8 pb-0 mb-0">
+                    <aside class="w-[28%] flex flex-col gap-8 border-r border-brandBlack/15 pr-8 pb-0 mb-0">
                         
-                        <div class="p-4 border border-brandBlack/20 bg-white/50">
+                        <div class="relative">
                             <h2 class="font-headline text-xl font-bold uppercase mb-3 border-b-2 border-brandBlack inline-block pb-1">Who We Are</h2>
                             <p class="text-sm leading-relaxed mb-6 font-serif text-brandGray">
                                 <strong class="font-bold text-brandBlack font-subhead uppercase tracking-wide">Aigfox Originals</strong> is a creative studio crafting powerful video advertising that connects brands with people.
                             </p>
                             
                             <ul class="flex flex-col text-xs font-subhead tracking-wide uppercase text-brandBlack">
-                                <li class="border-t border-brandBlack/10 hover:bg-paper-dark transition-colors">
-                                    <a href="#" class="flex items-center gap-3 py-3 px-2">
+                                <li class="border-t border-brandBlack/10 transition-colors">
+                                    <a href="#" class="flex items-center gap-3 py-3 px-1 hover:text-brandGray">
                                         <i class="fa-solid fa-play border border-brandBlack/30 rounded-sm p-1"></i> VIDEO ADS
                                     </a>
                                 </li>
-                                <li class="border-t border-brandBlack/10 hover:bg-paper-dark transition-colors">
-                                    <a href="#" class="flex items-center gap-3 py-3 px-2">
+                                <li class="border-t border-brandBlack/10 transition-colors">
+                                    <a href="#" class="flex items-center gap-3 py-3 px-1 hover:text-brandGray">
                                         <i class="fa-solid fa-clapperboard"></i> BRAND FILMS
                                     </a>
                                 </li>
-                                <li class="border-t border-brandBlack/10 hover:bg-paper-dark transition-colors">
-                                    <a href="#" class="flex items-center gap-3 py-3 px-2">
+                                <li class="border-t border-brandBlack/10 transition-colors">
+                                    <a href="#" class="flex items-center gap-3 py-3 px-1 hover:text-brandGray">
                                         <i class="fa-solid fa-bullhorn"></i> DIGITAL CAMPAIGNS
                                     </a>
                                 </li>
-                                <li class="border-t border-brandBlack/10 hover:bg-paper-dark transition-colors">
-                                    <a href="#" class="flex items-center gap-3 py-3 px-2">
+                                <li class="border-t border-brandBlack/10 transition-colors">
+                                    <a href="#" class="flex items-center gap-3 py-3 px-1 hover:text-brandGray">
                                         <i class="fa-solid fa-briefcase"></i> CORPORATE VIDEOS
                                     </a>
                                 </li>
-                                <li class="border-t border-brandBlack/10 hover:bg-paper-dark transition-colors">
-                                    <a href="#" class="flex items-center gap-3 py-3 px-2">
+                                <li class="border-t border-brandBlack/10 transition-colors">
+                                    <a href="#" class="flex items-center gap-3 py-3 px-1 hover:text-brandGray">
                                         <i class="fa-solid fa-camera-retro"></i> SOCIAL MEDIA CONTENT
                                     </a>
                                 </li>
-                                <li class="border-y border-brandBlack/10 hover:bg-paper-dark transition-colors">
-                                    <a href="#" class="flex items-center gap-3 py-3 px-2">
+                                <li class="border-y border-brandBlack/10 transition-colors">
+                                    <a href="#" class="flex items-center gap-3 py-3 px-1 hover:text-brandGray">
                                         <i class="fa-solid fa-scissors"></i> EDITING & POST PRODUCTION
                                     </a>
                                 </li>
                             </ul>
                         </div>
 
-                        <div class="border border-brandBlack/20 p-5 bg-paper-dark relative">
-                            <h3 class="font-headline text-lg font-bold uppercase border-b border-brandBlack/30 pb-2 mb-4">What Clients Say</h3>
+                        <div class="border-t border-brandBlack/20 pt-6 relative">
+                            <h3 class="font-headline text-lg font-bold uppercase border-b border-brandBlack/15 pb-2 mb-4">What Clients Say</h3>
                             
                             <div class="relative mb-6">
                                 <p class="font-serif italic text-brandGray text-sm leading-relaxed">
-                                    "The campaign exceeded our expectations and truly connected with our local audience. Highly recommended!"
+                                    "Parking became our biggest problem. Never thought we'd complain about too many customers. Thanks for that."
                                 </p>
-                                <p class="text-right text-[10px] font-subhead font-bold uppercase mt-2 text-brandBlack">— Happy Home</p>
+                                <p class="text-right text-[10px] font-subhead font-bold uppercase mt-2 text-brandBlack">— NIKSHAN GROUP</p>
                             </div>
                             
                             <div class="h-[1px] bg-brandBlack/10 w-full my-4"></div>
                             
                             <div class="relative">
                                 <p class="font-serif italic text-brandGray text-sm leading-relaxed">
-                                    "Brilliant storytelling. They captured the essence of sustainable living perfectly."
+                                    "People came for lunch and somehow stayed for dinner. We’re still trying to understand how."
                                 </p>
-                                <p class="text-right text-[10px] font-subhead font-bold uppercase mt-2 text-brandBlack">— Green Future</p>
+                                <p class="text-right text-[10px] font-subhead font-bold uppercase mt-2 text-brandBlack">— GOKUL OOTTUPURA</p>
                             </div>
                         </div>
 
-                        <div class="w-full mb-3 aspect-[4/3] border border-brandBlack/20 bg-white relative overflow-hidden group cursor-pointer hover:border-brandBlack/40 transition-colors">
-                            <span class="text-[9px] uppercase font-bold text-brandGray tracking-widest absolute top-2 right-2 border border-brandBlack/20 px-1 bg-paper/80 z-10 rounded-sm">Ad</span>
+                        <div class="w-full mb-3 aspect-[4/3] border border-brandBlack/20 relative overflow-hidden group cursor-pointer hover:border-brandBlack/40 transition-colors">
+                            <span class="text-[9px] uppercase font-bold text-brandGray tracking-widest absolute top-2 right-2 border border-brandBlack/10 px-1 bg-paper/80 z-10 rounded-sm">Ad</span>
                             <img src="dummy design 4.png" alt="Sidebar Advertisement" class="w-full h-full grayscale mix-blend-multiply opacity-80 group-hover:opacity-100 transition-opacity object-cover" onerror="this.onerror=null; this.src='https://placehold.co/300x225/eeebe2/111111?text=Ad+Space';">
                         </div>
 
-                        <div class="border border-brandBlack p-5 bg-white relative mt-2">
+                        <div class="border-t border-brandBlack/20 pt-6 relative mt-2">
                             <h3 class="font-headline text-2xl font-bold uppercase mb-2 text-center tracking-wide text-brandBlack">Join The Team</h3>
                             <p class="text-xs mb-5 text-center text-brandGray font-serif italic border-b border-brandBlack/10 pb-3">Seeking passionate creators</p>
                             
                             <!-- Ad Space Inside Join The Team -->
-                            <div class="w-full aspect-[4/3] border border-brandBlack/20 bg-paper-dark relative overflow-hidden mb-4 group cursor-pointer hover:border-brandBlack/40 transition-colors">
-                                <span class="text-[7px] uppercase font-bold text-brandGray tracking-widest absolute top-1 right-1 border border-brandBlack/20 px-1 bg-paper/80 z-10 rounded-sm">Ad</span>
+                            <div class="w-full aspect-[4/3] border border-brandBlack/20 relative overflow-hidden mb-4 group cursor-pointer hover:border-brandBlack/40 transition-colors">
+                                <span class="text-[7px] uppercase font-bold text-brandGray tracking-widest absolute top-1 right-1 border border-brandBlack/10 px-1 bg-paper/80 z-10 rounded-sm">Ad</span>
                                 <img src="dummy design 5.png" alt="Team Ad" class="w-full h-full grayscale mix-blend-multiply opacity-80 group-hover:opacity-100 transition-opacity object-cover" onerror="this.onerror=null; this.src='https://placehold.co/200x150/eeebe2/111111?text=Sponsor';">
                             </div>
                             
@@ -279,63 +273,55 @@
                         </div>
 
                         <!-- Sidebar Content Blocks -->
-                        <div class="border border-brandBlack/20 p-4 mt-2 bg-white relative">
-                            <h3 class="font-headline font-bold text-base uppercase mb-3 border-b border-brandBlack/20 pb-1">From The Archives</h3>
-                            <div class="w-full aspect-video bg-paper-dark border border-brandBlack/30 flex items-center justify-center relative overflow-hidden group cursor-pointer group/vid" onclick="playVideo(this)">
+                        <div class="border-t border-brandBlack/20 pt-6 mt-2 relative">
+                            <h3 class="font-headline font-bold text-base uppercase mb-3 border-b border-brandBlack/15 pb-1">The conversation everyone stayed for. 🎙️</h3>
+                            <div class="w-full aspect-video bg-transparent border border-brandBlack/20 flex items-center justify-center relative overflow-hidden group cursor-pointer group/vid" onclick="playVideo(this)">
                                 <div class="video-facade absolute inset-0 z-10 transition-opacity duration-300">
                                     <img data-video-type="vimeo" data-video-id="1201336623" data-custom-src="" class="dynamic-thumb absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Archive Thumbnail">
-                                    <div class="absolute inset-0 flex items-center justify-center bg-black/5 opacity-0 group-hover/vid:opacity-100 transition-opacity duration-300">
-                                        <div class="w-10 h-10 rounded-full border border-brandBlack flex items-center justify-center bg-paper text-brandBlack play-btn">
-                                            <i class="fa-solid fa-play ml-0.5 text-sm"></i>
-                                        </div>
+                                    <div class="absolute bottom-0 left-0 w-full bg-black/60 backdrop-blur-sm text-white/90 text-[10px] font-subhead uppercase tracking-widest py-2 z-20 text-center flex items-center justify-center gap-2 group-hover/vid:bg-black/80 transition-colors">
+                                        <i class="fa-solid fa-circle-play text-[11px]"></i> Play
                                     </div>
                                 </div>
                                 <iframe data-src="https://player.vimeo.com/video/1201336623?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
                             </div>
-                            <p class="text-xs mt-3 font-serif italic text-brandGray">A look back at our award-winning 2022 auto campaign.</p>
+                            <p class="text-xs mt-3 font-serif italic text-brandGray">A podcast episode packed with insights, stories, and moments worth revisiting.</p>
                         </div>
 
-                        <div class="border border-brandBlack/20 p-4 mt-2 bg-white relative">
-                            <h3 class="font-headline font-bold text-base uppercase mb-3 border-b border-brandBlack/20 pb-1">Editor's Pick</h3>
-                            <div class="w-full aspect-video bg-paper-dark border border-brandBlack/30 flex items-center justify-center relative overflow-hidden group cursor-pointer group/vid" onclick="playVideo(this)">
+                        <div class="border-t border-brandBlack/20 pt-6 mt-2 relative">
+                            <h3 class="font-headline font-bold text-base uppercase mb-3 border-b border-brandBlack/15 pb-1">The ad that broke the algorithm. 🚀</h3>
+                            <div class="w-full aspect-video bg-transparent border border-brandBlack/20 flex items-center justify-center relative overflow-hidden group cursor-pointer group/vid" onclick="playVideo(this)">
                                 <div class="video-facade absolute inset-0 z-10 transition-opacity duration-300">
                                     <img data-video-type="vimeo" data-video-id="1201355893" data-custom-src="" class="dynamic-thumb absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Editor's Pick Thumbnail">
-                                    <div class="absolute inset-0 flex items-center justify-center bg-black/5 opacity-0 group-hover/vid:opacity-100 transition-opacity duration-300">
-                                        <div class="w-10 h-10 rounded-full border border-brandBlack flex items-center justify-center bg-paper text-brandBlack play-btn">
-                                            <i class="fa-solid fa-play ml-0.5 text-sm"></i>
-                                        </div>
+                                    <div class="absolute bottom-0 left-0 w-full bg-black/60 backdrop-blur-sm text-white/90 text-[10px] font-subhead uppercase tracking-widest py-2 z-20 text-center flex items-center justify-center gap-2 group-hover/vid:bg-black/80 transition-colors">
+                                        <i class="fa-solid fa-circle-play text-[11px]"></i> Play
                                     </div>
                                 </div>
                                 <iframe data-src="https://player.vimeo.com/video/1201355893?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
                             </div>
-                            <p class="text-xs mt-3 font-serif italic text-brandGray">The short brand film that started it all.</p>
+                            <p class="text-xs mt-3 font-serif italic text-brandGray">A campaign that turned views into conversations and reached audiences far beyond expectations.</p>
                         </div>
 
-                        <div class="border border-brandBlack/20 p-4 mt-2 bg-white relative">
-                            <h3 class="font-headline font-bold text-base uppercase mb-3 border-b border-brandBlack/20 pb-1">Fan Favorite</h3>
-                            <div class="w-full aspect-video bg-paper-dark border border-brandBlack/30 flex items-center justify-center relative overflow-hidden group cursor-pointer group/vid" onclick="playVideo(this)">
+                        <div class="border-t border-brandBlack/20 pt-6 mt-2 relative">
+                            <h3 class="font-headline font-bold text-base uppercase mb-3 border-b border-brandBlack/15 pb-1">The big-screen welcome to Nikshan. 🎬</h3>
+                            <div class="w-full aspect-video bg-transparent border border-brandBlack/20 flex items-center justify-center relative overflow-hidden group cursor-pointer group/vid" onclick="playVideo(this)">
                                 <div class="video-facade absolute inset-0 z-10 transition-opacity duration-300">
                                     <img data-video-type="vimeo" data-video-id="1201374112" data-custom-src="" class="dynamic-thumb absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Fan Favorite Thumbnail">
-                                    <div class="absolute inset-0 flex items-center justify-center bg-black/5 opacity-0 group-hover/vid:opacity-100 transition-opacity duration-300">
-                                        <div class="w-10 h-10 rounded-full border border-brandBlack flex items-center justify-center bg-paper text-brandBlack play-btn">
-                                            <i class="fa-solid fa-play ml-0.5 text-sm"></i>
-                                        </div>
+                                    <div class="absolute bottom-0 left-0 w-full bg-black/60 backdrop-blur-sm text-white/90 text-[10px] font-subhead uppercase tracking-widest py-2 z-20 text-center flex items-center justify-center gap-2 group-hover/vid:bg-black/80 transition-colors">
+                                        <i class="fa-solid fa-circle-play text-[11px]"></i> Play
                                     </div>
                                 </div>
                                 <iframe data-src="https://player.vimeo.com/video/1201374112?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
                             </div>
-                            <p class="text-xs mt-3 font-serif italic text-brandGray">The viral food commercial of 2023.</p>
+                            <p class="text-xs mt-3 font-serif italic text-brandGray">Designed for the cinema experience, bringing the brand to life on the largest screen in town.</p>
                         </div>
 
-                        <div class="border border-brandBlack/20 p-4 mt-2 bg-white relative">
-                            <h3 class="font-headline font-bold text-base uppercase mb-3 border-b border-brandBlack/20 pb-1">Trending Reel</h3>
-                            <div class="w-full aspect-[9/16] bg-paper-dark border border-brandBlack/30 flex items-center justify-center relative overflow-hidden group cursor-pointer group/vid" onclick="playVideo(this)">
+                        <div class="border-t border-brandBlack/20 pt-6 mt-2 relative">
+                            <h3 class="font-headline font-bold text-base uppercase mb-3 border-b border-brandBlack/15 pb-1">Trending Reel</h3>
+                            <div class="w-full aspect-[9/16] bg-transparent border border-brandBlack/20 flex items-center justify-center relative overflow-hidden group cursor-pointer group/vid" onclick="playVideo(this)">
                                 <div class="video-facade absolute inset-0 z-10 transition-opacity duration-300">
                                     <img data-video-type="vimeo" data-video-id="1201349704" data-custom-src="" class="dynamic-thumb absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Trending Reel Thumbnail">
-                                    <div class="absolute inset-0 flex items-center justify-center bg-black/5 opacity-0 group-hover/vid:opacity-100 transition-opacity duration-300">
-                                        <div class="w-12 h-12 rounded-full border border-brandBlack flex items-center justify-center bg-paper text-brandBlack play-btn">
-                                            <i class="fa-solid fa-play ml-0.5 text-lg"></i>
-                                        </div>
+                                    <div class="absolute bottom-0 left-0 w-full bg-black/60 backdrop-blur-sm text-white/90 text-[10px] font-subhead uppercase tracking-widest py-2 z-20 text-center flex items-center justify-center gap-2 group-hover/vid:bg-black/80 transition-colors">
+                                        <i class="fa-solid fa-circle-play text-[11px]"></i> Play
                                     </div>
                                 </div>
                                 <iframe data-src="https://player.vimeo.com/video/1201349704?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
@@ -343,15 +329,13 @@
                             <p class="text-xs mt-3 font-serif italic text-brandGray">A quick splash of creativity crafted for social feeds.</p>
                         </div>
 
-                        <div class="border border-brandBlack/20 p-4 mt-2 bg-white relative">
-                            <h3 class="font-headline font-bold text-base uppercase mb-3 border-b border-brandBlack/20 pb-1">Viral Short</h3>
-                            <div class="w-full aspect-[9/16] bg-paper-dark border border-brandBlack/30 flex items-center justify-center relative overflow-hidden group cursor-pointer" onclick="playVideo(this)">
+                        <div class="border-t border-brandBlack/20 pt-6 mt-2 relative">
+                            <h3 class="font-headline font-bold text-base uppercase mb-3 border-b border-brandBlack/15 pb-1">Viral Short</h3>
+                            <div class="w-full aspect-[9/16] bg-transparent border border-brandBlack/20 flex items-center justify-center relative overflow-hidden group cursor-pointer group/vid" onclick="playVideo(this)">
                                 <div class="video-facade absolute inset-0 z-10 transition-opacity duration-300">
-                                    <img data-video-type="vimeo" data-video-id="1201336624" data-custom-src="" class="dynamic-thumb absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Reel Thumbnail">
-                                    <div class="absolute inset-0 flex items-center justify-center bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        <div class="w-12 h-12 rounded-full border border-brandBlack flex items-center justify-center bg-paper text-brandBlack play-btn">
-                                            <i class="fa-solid fa-play ml-0.5 text-lg"></i>
-                                        </div>
+                                    <img data-video-type="vimeo" data-video-id="1201336624" data-custom-src="" class="dynamic-thumb absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/vid:scale-105" alt="Reel Thumbnail">
+                                    <div class="absolute bottom-0 left-0 w-full bg-black/60 backdrop-blur-sm text-white/90 text-[10px] font-subhead uppercase tracking-widest py-2 z-20 text-center flex items-center justify-center gap-2 group-hover/vid:bg-black/80 transition-colors">
+                                        <i class="fa-solid fa-circle-play text-[11px]"></i> Play
                                     </div>
                                 </div>
                                 <iframe data-src="https://player.vimeo.com/video/1201336624?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
@@ -359,8 +343,8 @@
                             <p class="text-xs mt-3 font-serif italic text-brandGray">Another vertical masterpiece that caught the internet's eye.</p>
                         </div>
 
-                        <div class="w-full mt-auto aspect-[3/4] border border-brandBlack/20 bg-white relative overflow-hidden group cursor-pointer hover:border-brandBlack/40 transition-colors">
-                            <span class="text-[9px] uppercase font-bold text-brandGray tracking-widest absolute top-2 right-2 border border-brandBlack/20 px-1 bg-paper/80 z-10 rounded-sm">Ad</span>
+                        <div class="w-full mt-auto aspect-[3/4] border border-brandBlack/20 bg-transparent relative overflow-hidden group cursor-pointer hover:border-brandBlack/40 transition-colors">
+                            <span class="text-[9px] uppercase font-bold text-brandGray tracking-widest absolute top-2 right-2 border border-brandBlack/10 px-1 bg-paper/80 z-10 rounded-sm">Ad</span>
                             <img src="dummy design 2.png" alt="Sidebar Advertisement" class="w-full h-full grayscale mix-blend-multiply opacity-80 group-hover:opacity-100 transition-opacity object-cover" onerror="this.onerror=null; this.src='https://placehold.co/300x400/f9f7f1/111111?text=Creative+Ad';">
                         </div>
                         
@@ -382,8 +366,7 @@
                             <div class="grid grid-cols-2 gap-x-10 gap-y-12 relative">
                                 
                                 <div class="group flex flex-col article-card p-2 relative rounded-sm">
-                                    <h4 class="font-headline font-bold text-3xl md:text-4xl leading-none mb-2 text-brandBlack">The Urban Escape</h4>
-                                    <p class="font-serif text-base italic text-brandGray mb-4 leading-tight">"How we captured the city's midnight pulse"</p>
+                                    <h4 class="font-headline font-bold text-2xl md:text-3xl leading-none mb-3 text-brandBlack">Even when Kerala takes a power nap, Nikshan stays awake.</h4>
                                     
                                     <!-- Custom Facade Overlay for Video 1 -->
                                     <div class="w-full aspect-[4/3] bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-4 cursor-pointer group/vid" onclick="playVideo(this)">
@@ -398,17 +381,16 @@
                                     </div>
                                     
                                     <p class="text-[10px] font-subhead uppercase font-semibold text-brandGray tracking-widest mb-3 flex flex-wrap gap-x-2">
-                                        <span class="text-brandBlack">Client: RideOn</span> &bull; <span>Auto</span> &bull; <span>01:30</span> 
+                                        <span class="text-brandBlack">Client: Nikshan Group</span> &bull; <span>Inverter</span> &bull; <span>00:45</span> 
                                     </p>
                                     
                                     <p class="text-sm font-body text-brandGray leading-relaxed mb-4">
-                                        A cinematic journey through neon-lit streets, capturing the raw emotion of the midnight drive in stunning high contrast.
+                                        Some houses panic during power cuts. Some houses become the neighborhood headquarters. Inspired by a reality every Malayali secretly understands, this emotionally driven campaign captures how backup power quietly turns one home into everyone’s favorite destination — proving that Nikshan doesn’t just power homes, it powers unexpected visitors too.
                                     </p>
                                 </div>
 
                                 <div class="group flex flex-col article-card p-2 rounded-sm">
-                                    <h4 class="font-headline font-bold text-3xl md:text-4xl leading-none mb-2 text-brandBlack">Nature's Secret</h4>
-                                    <p class="font-serif text-base italic text-brandGray mb-4 leading-tight">"Discovering sustainable living beautifully"</p>
+                                    <h4 class="font-headline font-bold text-2xl md:text-3xl leading-none mb-3 text-brandBlack">Barbershop waiting times reportedly longer than movie intervals.</h4>
                                     
                                     <!-- Custom Facade Overlay for Video 2 -->
                                     <div class="w-full aspect-[4/3] bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-4 cursor-pointer group/vid" onclick="playVideo(this)">
@@ -423,19 +405,18 @@
                                     </div>
                                     
                                     <p class="text-[10px] font-subhead uppercase font-semibold text-brandGray tracking-widest mb-3 flex flex-wrap gap-x-2">
-                                        <span class="text-brandBlack">Client: Green Future</span> &bull; <span>Eco</span> &bull; <span>00:45</span>
+                                        <span class="text-brandBlack">Client: Nikshan Group</span> &bull; <span>Air Conditioner</span> &bull; <span>00:45</span>
                                     </p>
                                     
                                     <p class="text-sm font-body text-brandGray leading-relaxed mb-4">
-                                        Filming entirely on location in lush valleys to bring eco-friendly initiatives naturally to light.
+                                        What was once a quick in-and-out visit has reportedly turned into a full social experience. Local residents now describe certain barbershops as “worth the wait,” while nearby parking and tea vendors quietly celebrate the sudden increase in foot traffic.
                                     </p>
                                 </div>
 
                                 <div class="col-span-2 border-t border-brandBlack/10 w-full my-2"></div>
 
                                 <div class="group flex flex-col article-card p-2 rounded-sm">
-                                    <h4 class="font-headline font-bold text-3xl md:text-4xl leading-none mb-2 text-brandBlack">A Taste of Tomorrow</h4>
-                                    <p class="font-serif text-base italic text-brandGray mb-4 leading-tight">"Redefining the farm-to-table experience"</p>
+                                    <h4 class="font-headline font-bold text-2xl md:text-3xl leading-none mb-3 text-brandBlack">Neighborhood eye contact reportedly down by 87%.</h4>
                                     
                                     <!-- Custom Facade Overlay for Video 3 -->
                                     <div class="w-full aspect-[4/3] bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-4 cursor-pointer group/vid" onclick="playVideo(this)">
@@ -450,17 +431,16 @@
                                     </div>
                                     
                                     <p class="text-[10px] font-subhead uppercase font-semibold text-brandGray tracking-widest mb-3 flex flex-wrap gap-x-2">
-                                        <span class="text-brandBlack">Client: FreshDay</span> &bull; <span>Food</span> &bull; <span>01:00</span>
+                                        <span class="text-brandBlack">Client: Nikshan Group</span> &bull; <span>Home Appliances</span> &bull; <span>00:45</span>
                                     </p>
                                     
                                     <p class="text-sm font-body text-brandGray leading-relaxed mb-4">
-                                        Utilizing crisp macro-lenses to make everyday ingredients look like a cinematic masterpiece.
+                                        Recent developments suggest certain household upgrades may be unintentionally changing local social patterns. Streets appear calmer, parents unusually relaxed, and some stories… apparently ended before they could properly begin.
                                     </p>
                                 </div>
 
                                 <div class="group flex flex-col article-card p-2 rounded-sm">
-                                    <h4 class="font-headline font-bold text-3xl md:text-4xl leading-none mb-2 text-brandBlack">Building the Dream</h4>
-                                    <p class="font-serif text-base italic text-brandGray mb-4 leading-tight">"Crafting spaces that matter through emotion"</p>
+                                    <h4 class="font-headline font-bold text-2xl md:text-3xl leading-none mb-3 text-brandBlack">Being “up to trend” now reportedly harder to ignore.</h4>
                                     
                                     <!-- Custom Facade Overlay for Video 4 -->
                                     <div class="w-full aspect-[4/3] bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-4 cursor-pointer group/vid" onclick="playVideo(this)">
@@ -475,11 +455,11 @@
                                     </div>
                                     
                                     <p class="text-[10px] font-subhead uppercase font-semibold text-brandGray tracking-widest mb-3 flex flex-wrap gap-x-2">
-                                        <span class="text-brandBlack">Client: Happy Home</span> &bull; <span>Real Estate</span> &bull; <span>02:00</span>
+                                        <span class="text-brandBlack">Client: Theresa Designers</span> &bull; <span>Fashion</span> &bull; <span>00:45</span>
                                     </p>
                                     
                                     <p class="text-sm font-body text-brandGray leading-relaxed mb-4">
-                                        Highlighting the warm, human connection of finding and building a forever home.
+                                        Fashion standards appear to be quietly shifting, with people suddenly paying suspicious attention to what they wear. Confidence seems sharper, first impressions lasting longer, and outdated wardrobes reportedly under increasing pressure.
                                     </p>
                                 </div>
                             </div>
@@ -488,8 +468,7 @@
 
                             <div class="flex flex-col gap-8">
                                 <div class="w-full group flex flex-col article-card p-2 cursor-pointer rounded-sm">
-                                    <h4 class="font-headline font-bold text-5xl md:text-6xl leading-[1] mb-4 text-brandBlack">The Grand Finale</h4>
-                                    <p class="font-serif text-xl italic text-brandGray mb-6 leading-tight">"An exclusive look behind the magic of our most ambitious brand film to date."</p>
+                                    <h4 class="font-headline font-bold text-4xl md:text-5xl leading-[1.1] mb-6 text-brandBlack">2 traffic police officers reportedly joined Nikshan.</h4>
 
                                     <!-- Main Feature 16:9 Facade -->
                                     <div class="w-full h-full min-h-[350px] aspect-video bg-paper-dark border border-brandBlack/20 relative overflow-hidden mb-6 cursor-pointer group/vid" onclick="playVideo(this)">
@@ -504,11 +483,11 @@
                                     </div>
                                     
                                     <p class="text-xs font-subhead uppercase font-semibold text-brandGray tracking-widest mb-4 flex flex-wrap gap-x-3">
-                                        <span class="text-brandBlack">Client: Director's Cut</span> &bull; <span>Entertainment</span> &bull; <span>05:00</span>
+                                        <span class="text-brandBlack">Client: Nikshan Group</span> &bull; <span>Home Appliances</span> &bull; <span>00:45</span>
                                     </p>
 
                                     <p class="text-base font-body text-brandGray leading-relaxed mb-6 w-5/6">
-                                        Over 50 actors and 3 iconic locations. A captivating, unforgettable cinematic experience pushed to the limits for the big screen. We left no stone unturned.
+                                        Parking spaces around Nikshan are reportedly getting harder to find, with unusually enthusiastic crowds causing what locals are now calling “healthy shopping traffic.” Sources claim weekend movement has increased significantly, while nearby tea shops are quietly enjoying unexpected business.
                                     </p>
                                 </div>
                                 
@@ -526,12 +505,12 @@
                                             </div>
                                             <iframe data-src="https://player.vimeo.com/video/1198049107?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
                                         </div>
-                                        <h4 class="font-headline font-bold text-xl uppercase leading-none mb-2 text-brandBlack">Sunsip Summer</h4>
-                                        <p class="text-[9px] font-subhead uppercase font-semibold text-brandGray tracking-widest mb-2 flex gap-x-2">
-                                            <span class="text-brandBlack">Sunsip</span> &bull; <span>00:15</span>
+                                        <h4 class="font-headline font-bold text-lg md:text-xl leading-tight mb-2 text-brandBlack">Police investigation reportedly ended at Tony & Guy.</h4>
+                                        <p class="text-[9px] font-subhead uppercase font-semibold text-brandGray tracking-widest mb-2 flex flex-wrap gap-x-2">
+                                            <span class="text-brandBlack">Tony & Guy</span> &bull; <span>Grand Opening</span>
                                         </p>
                                         <p class="text-xs font-body text-brandGray leading-relaxed mb-4">
-                                            A viral splash of color made specifically for vertical feeds.
+                                            Crowds are increasing, curiosity is rising, and the new location is already attracting plenty of attention.
                                         </p>
                                         <div class="inline-flex items-center gap-1.5 font-subhead font-bold text-[10px] uppercase tracking-widest text-brandBlack group-hover:text-brandGray transition-colors mt-auto w-max cursor-pointer">
                                             <i class="fa-solid fa-play text-[8px]"></i> Watch Reel
@@ -549,12 +528,12 @@
                                             </div>
                                             <iframe data-src="https://player.vimeo.com/video/1198049163?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
                                         </div>
-                                        <h4 class="font-headline font-bold text-xl uppercase leading-none mb-2 text-brandBlack">Tech Unveiled</h4>
-                                        <p class="text-[9px] font-subhead uppercase font-semibold text-brandGray tracking-widest mb-2 flex gap-x-2">
-                                            <span class="text-brandBlack">TechCorp</span> &bull; <span>00:30</span>
+                                        <h4 class="font-headline font-bold text-lg md:text-xl leading-tight mb-2 text-brandBlack">People are reportedly visiting Gokul Oottupura with no actual hunger.</h4>
+                                        <p class="text-[9px] font-subhead uppercase font-semibold text-brandGray tracking-widest mb-2 flex flex-wrap gap-x-2">
+                                            <span class="text-brandBlack">Gokul Oottupura</span> &bull; <span>Vegetarian Dining</span>
                                         </p>
                                         <p class="text-xs font-body text-brandGray leading-relaxed mb-4">
-                                            Fast-paced, dynamic cuts to launch the latest device.
+                                            Recent reports suggest that good food is no longer the only reason people keep showing up. Vibes appear to be equally responsible.
                                         </p>
                                         <div class="inline-flex items-center gap-1.5 font-subhead font-bold text-[10px] uppercase tracking-widest text-brandBlack group-hover:text-brandGray transition-colors mt-auto w-max cursor-pointer">
                                             <i class="fa-solid fa-play text-[8px]"></i> Watch Reel
@@ -572,12 +551,12 @@
                                             </div>
                                             <iframe data-src="https://player.vimeo.com/video/1201336621?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" class="w-full h-full absolute top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
                                         </div>
-                                        <h4 class="font-headline font-bold text-xl uppercase leading-none mb-2 text-brandBlack">City Lights</h4>
-                                        <p class="text-[9px] font-subhead uppercase font-semibold text-brandGray tracking-widest mb-2 flex gap-x-2">
-                                            <span class="text-brandBlack">UrbanCart</span> &bull; <span>00:20</span>
+                                        <h4 class="font-headline font-bold text-lg md:text-xl leading-tight mb-2 text-brandBlack">Confidence levels reportedly up after Theresa Designers.</h4>
+                                        <p class="text-[9px] font-subhead uppercase font-semibold text-brandGray tracking-widest mb-2 flex flex-wrap gap-x-2">
+                                            <span class="text-brandBlack">Theresa Designers</span> &bull; <span>Fashion</span>
                                         </p>
                                         <p class="text-xs font-body text-brandGray leading-relaxed mb-4">
-                                            A nighttime fashion highlight utilizing neon contrasts.
+                                            Style standards continue to rise as more people discover the power of the perfect fit.
                                         </p>
                                         <div class="inline-flex items-center gap-1.5 font-subhead font-bold text-[10px] uppercase tracking-widest text-brandBlack group-hover:text-brandGray transition-colors mt-auto w-max cursor-pointer">
                                             <i class="fa-solid fa-play text-[8px]"></i> Watch Reel
